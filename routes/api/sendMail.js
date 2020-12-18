@@ -9,7 +9,9 @@ const transporter = nodemailer.createTransport({
   auth: {
     user: process.env.EMAIL,
     pass: process.env.PASSWORD
-  }
+  },
+  secureConnection: 'false',
+  tls: { ciphers: 'SSLv3' }
 });
 
 transporter.verify(function (error, success) {
