@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const nodemailer = require('nodemailer')
-require('dotenv').config('./.env')
+require('dotenv').config()
 
 
 const transporter = nodemailer.createTransport({
