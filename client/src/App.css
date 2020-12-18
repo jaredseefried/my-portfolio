@@ -75,6 +75,7 @@ body {
   margin: 0 auto;
   width: 20rem;
   border-radius: 5px;
+  box-shadow: 1px 1px 6px #8c8c8c;
 }
 
 .card-img-top {
