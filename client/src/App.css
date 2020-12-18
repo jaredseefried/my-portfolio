@@ -76,6 +76,7 @@ body {
   width: 20rem;
   border-radius: 5px;
   box-shadow: 1px 1px 6px #8c8c8c;
+  /* height: 500px; */
 }
 
 .card-img-top {
@@ -87,12 +88,13 @@ body {
   width: 90%;
   margin: 0px auto;
   margin-bottom: 20px;
+  text-overflow: ellipsis;
+  height: 100px;
+  /* overflow: hidden; */
 }
 
 .card-title {
-  padding-left: 20px;
-  font-size: 30px;
-  padding-top: 20px;
+  font-weight: bold;
 }
 
 .cards-home-container {
@@ -107,14 +109,15 @@ body {
 
 .jared-img {
   width: 116px;
-    border-radius: 50%;
-    height: auto;
-    margin-left: 20px;
+  border-radius: 50%;
+  height: auto;
+  /* margin-left: 20px; */
 }
 
-.footer-text{
+.footer-text {
   /* display: block; */
-  margin: 0 auto;
+  margin: 10px auto;
+  width: 70%;
 }
 
 .list-group-item:active {
@@ -136,26 +139,26 @@ body {
   object-position: bottom;
 }
 
-.tab-content{
+.tab-content {
   padding-top: 20px;
   width: 90%;
   line-height: 1.5;
   font-size: 18px;
 }
 
-.about-section{
+.about-section {
   display: block;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
-.footer-container{
+.footer-container {
   padding: 30px 0px;
   background: #272727;
   color: white;
   font-size: 18px;
 }
 
-.footer-text{
+.footer-text {
   float: right;
 }
 
@@ -231,7 +234,19 @@ body {
   color: white;
 }
 
-.submit-btn{
+.submit-btn {
   margin-left: 1px;
-  background:linear-gradient(0deg,#000, rgb(80, 79, 79));
+  background: linear-gradient(0deg, #000, rgb(80, 79, 79));
+}
+
+.body-card {
+  height: 250px;
+}
+
+.portfolio-card {
+  margin: 30px auto;
+}
+
+ul{
+  list-style: none;
 }

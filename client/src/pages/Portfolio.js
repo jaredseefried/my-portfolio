@@ -1,10 +1,94 @@
 import React from 'react'
+import shelfIndulgence from '../images/shelf-indulgence.jpg'
+import pandemicTracker from '../images/pandemic-tracker.jpg'
+import mealMatcher from '../images/meal-matcher.jpg'
+import chatApp from '../images/chat-app.jpg'
+import empDir from '../images/employee-directory.jpg'
+import burger from '../images/eat-da-burger.jpg'
+import weather from '../images/weather-dashboard.jpg'
 
-function Portfolio (){
+
+function Portfolio() {
   return (
     <div className="portfolio-container">
-
-    </div>
+      <div className="row">
+        {/* <h1 className="h1-title mx-auto display-3">Group Projects</h1> */}
+      </div>
+      <div className="row col-12">
+        <div className="col-4 card-div">
+          <div className="card portfolio-card">
+            <img className="card-img-top" src={pandemicTracker} alt="" />
+            <div className="card-body">
+              <h5 className="card-title">Pandemic Tracker</h5>
+              <p className="card-text">A MERN (Mongo, Express, React and Node) Application using React-Globe and API's to show updated stats on Covid-19. </p>
+              <a href="" className="btn btn-primary">Go There!</a>
+            </div>
+          </div>
+        </div>
+        <div className="col-4 card-div">
+          <div className="card portfolio-card">
+            <img className="card-img-top" src={shelfIndulgence} alt="" />
+            <div className="card-body">
+              <h5 className="card-title">Shelf Indulgence</h5>
+              <p className="card-text">A book club community where you can search for books using an API, add those books to a MySQL database and communicate in a chat room.</p>
+              <a href="" className="btn btn-primary">Go There!</a>
+            </div>
+          </div>
+        </div>
+        <div className="col-4">
+          <div className="card portfolio-card">
+            <img className="card-img-top" src={mealMatcher} alt="" />
+            <div className="card-body">
+              <h5 className="card-title">Meal Matcher</h5>
+              <p className="card-text">A recipe site using Server side and third party API's</p>
+              <a href="" className="btn btn-primary">Go There!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div className="row">
+          <div className="col-3">
+            <div className="card portfolio-card">
+              <img className="card-img-top" src={chatApp} alt="" />
+              <div className="card-body">
+                <h5 className="card-title">Chat Application</h5>
+                <p className="card-text">A real time chat application using Express and Socket.io</p>
+                <a href="" className="btn btn-primary">Go There!</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-3">
+            <div className="card portfolio-card">
+              <img className="card-img-top" src={empDir} alt="" />
+              <div className="card-body">
+                <h5 className="card-title">Employee Directory</h5>
+                <p className="card-text">The directory is built on React and uses class components to utilize states. Requires the use of .map and .sort methods using arrays. </p>
+                <a href="" className="btn btn-primary">Go There!</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-3">
+            <div className="card portfolio-card">
+              <img className="card-img-top" src={burger} alt="" />
+              <div className="card-body">
+                <h5 className="card-title">Eat-Da-Burger</h5>
+                <p className="card-text">A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM. I create a MVC design pattern to separate information.</p>
+                <a href="" className="btn btn-primary">Go There!</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-3 card-div">
+            <div className="card portfolio-card">
+              <img className="card-img-top" src={weather} alt="" />
+              <div className="card-body">
+                <h5 className="card-title">Weather Dashboard</h5>
+                <p className="card-text">The dashboard calls a third party API (openweathermap.com) to show current weather when a user searches for a city. Searches are saved in a history panel. </p>
+                <a href="" className="btn btn-primary">Go There!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   )
 }
 
