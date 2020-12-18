@@ -3,7 +3,7 @@ import React from 'react'
 import Header from '../components/Header'
 import MernList from '../components/MernList'
 import Cards from '../components/Cards'
-import Footer from '../components/Footer'
+// import Footer from '../components/Footer'
 
 function Home() {
   return (
