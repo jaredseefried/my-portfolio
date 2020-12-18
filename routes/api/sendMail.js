@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const nodemailer = require('nodemailer')
-require('dotenv').config()
+require('dotenv').config('./.env')
+
 
 const transporter = nodemailer.createTransport({
   host: "smtp.office365.com",
