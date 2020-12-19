@@ -4,9 +4,8 @@ require('dotenv').config()
 
 
 const transporter = nodemailer.createTransport({
-  host: "smtp.office365.com",
-  port: 587,
-  secure: false,
+  service: "Gmail",
+  host: "smtp.gmail.com",
   auth: {
     user: process.env.EMAIL,
     pass: process.env.PASSWORD
