@@ -22,7 +22,7 @@ function Contact() {
     API.getContacts()
       .then((response) => {
         const data = response.data
-        console.log(data);
+        // console.log(data);
         console.log("Mongo Connected - Array Generated")
       })
       .catch((error) => {
