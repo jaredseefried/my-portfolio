@@ -1,14 +1,27 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import mernImg from '../images/mern-stack-development.png'
-
+import WAVES from 'vanta/dist/vanta.waves.min'
 
 function Header() {
+  const [vantaEffect, setVantaEffect] = useState(0)
+  const myRef = useRef(null)
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(WAVES({
+        el: myRef.current
+      }))
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy()
+    }
+  }, [vantaEffect])
+
   return (
 
-    <div className="header-container container-fluid col-12">
+    <div ref={myRef} className="header-container container-fluid col-12">
       <div className="row">
         <div className="col-xs-12 col-md-8 header-box mx-auto">
-          <h1 className="header-h1 display-3">Full Stack Development</h1>
+          <h1 className="header-h1">Full Stack Development</h1>
           <table>
             <tbody>
               <tr>
@@ -23,7 +36,7 @@ function Header() {
           </table>
         </div>
         <div className="col-xs-12 col-md-4">
-          <img className="main-img" src={mernImg} alt="..." />
+          <img className="main-img col-12" src={mernImg} alt="..." />
         </div>
       </div>
     </div>

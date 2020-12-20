@@ -27,6 +27,7 @@
     "mongoose": "^5.3.16",
     "nodejs-nodemailer-outlook": "^1.2.3",
     "nodemailer": "^6.4.17",
-    "react-icons": "^4.1.0"
+    "react-icons": "^4.1.0",
+    "vanta": "^0.5.21"
   }
 }
