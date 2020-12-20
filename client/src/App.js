@@ -13,7 +13,7 @@ import Contact from './pages/Contact'
 function App() {
   return (
     <Router>
-    <div className="App">
+    <div className="App container col-12">
       <Navigation />
       <Route exact path="/" component={Home} />
       <Route exact path="/portfolio" component={Portfolio} />

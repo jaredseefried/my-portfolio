@@ -7,7 +7,7 @@ function Header() {
 
     <div className="header-container container-fluid col-12">
       <div className="row">
-        <div className="col-8 header-box">
+        <div className="col-xs-12 col-md-8 header-box mx-auto">
           <h1 className="header-h1 display-3">Full Stack Development</h1>
           <table>
             <tbody>
@@ -22,7 +22,7 @@ function Header() {
             </tbody>
           </table>
         </div>
-        <div className="col-4">
+        <div className="col-xs-12 col-md-4">
           <img className="main-img" src={mernImg} alt="..." />
         </div>
       </div>
