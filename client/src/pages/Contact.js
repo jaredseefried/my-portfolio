@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-// import './contact.css'
+// import ReactDOM from "react-dom"
 import GitHubButton from 'react-github-btn'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import API from '../../src/utils/API'
@@ -148,12 +148,14 @@ function Contact() {
                   </textarea>
                 </div>
               </div>
-              <div
+              <button
                 type="submit"
                 onClick={handleFormSubmit}
+                onSubmit={handleFormSubmit}
+                onTouchStart={handleFormSubmit}
                 className="btn btn-primary submit-btn">
                 Submit
-                </div>
+                </button>
             </div>
           </div>
 
