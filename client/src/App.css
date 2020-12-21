@@ -51,12 +51,11 @@ body {
 }
 
 .mern-logos img{
-  max-width: 200px;
+  width: 200px;
   /* width: 50px; */
   height: auto;
   margin: 10px auto;
 }
-
 
 /* text animation */
 

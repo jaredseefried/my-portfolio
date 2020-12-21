@@ -10,18 +10,18 @@ function MERNheader(){
         <div className="row">
           <h1 className="header-h1 display-3 text-center">FULL STACK DEVELOPMENT</h1>
         </div>
-        <div className="col-12">
-          <div className="row">
-            <div className="col-3 mern-logos">
+        <div className="col-12 mx-auto">
+          <div className="row mx-auto">
+            <div className="col-xs-12 col-lg-3 mern-logos">
               <img src={mongo} alt="..." />
             </div>
-            <div className="col-3 mern-logos">
+            <div className="col-xs-12 col-lg-3 mern-logos">
             <img src={express} alt="..." />
             </div>
-            <div className="col-3 mern-logos">
+            <div className="col-xs-12 col-lg-3 mern-logos">
             <img src={reactLogo} alt="..." />
             </div>
-            <div className="col-3 mern-logos">
+            <div className="col-xs-12 col-lg-3 mern-logos">
             <img src={node} alt="..." />
             </div>
           </div>
