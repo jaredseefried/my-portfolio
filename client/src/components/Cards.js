@@ -4,7 +4,7 @@ function Cards() {
   return (
     <div className="cards-home-container col-12">
       <div className="row">
-        <div className="col-xs-12 col-md-4">
+        <div className="col-xs-12 col-md-12 col-lg-4">
           <div className="card portfolio-card">
             <img className="card-img-top" src="https://d9qtyz43wogdd.cloudfront.net/pixpacom/images/homebanner-image.jpg" alt="" />
             <div className="card-body">
@@ -14,7 +14,7 @@ function Cards() {
             </div>
           </div>
         </div>
-        <div className="col-xs-12 col-md-4">
+        <div className="col-xs-12 col-md-12 col-lg-4">
           <div className="card portfolio-card">
             <img className="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT78PFP5HuGD5BJUhCqnY4crXgoTcCJP7_yJA&usqp=CAU" alt="" />
             <div className="card-body">
@@ -24,7 +24,7 @@ function Cards() {
             </div>
           </div>
         </div>
-        <div className="col-xs-12 col-md-4">
+        <div className="col-xs-12 col-md-12 col-lg-4">
           <div className="card portfolio-card">
             <img className="card-img-top" src="https://previews.123rf.com/images/279photo/279photo1705/279photo170501991/81032796-client-support-service-workdesk-with-contact-us-signs-dark-background-top-view-mockup.jpg" alt="" />
             <div className="card-body">

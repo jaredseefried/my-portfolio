@@ -15,7 +15,7 @@ function Portfolio() {
         {/* <h1 className="h1-title mx-auto display-3">Group Projects</h1> */}
       </div>
       <div className="row">
-        <div className="col-xs-12 col-md-4 card-div">
+        <div className="col-xs-12 col-md-12 col-lg-4 card-div">
           <div className="card portfolio-card">
             <img className="card-img-top" src={pandemicTracker} alt="" />
             <div className="card-body">
@@ -25,7 +25,7 @@ function Portfolio() {
             </div>
           </div>
         </div>
-        <div className="col-xs-12 col-md-4 card-div">
+        <div className="col-xs-12 col-md-12 col-lg-4 card-div">
           <div className="card portfolio-card">
             <img className="card-img-top" src={shelfIndulgence} alt="" />
             <div className="card-body">
@@ -35,7 +35,7 @@ function Portfolio() {
             </div>
           </div>
         </div>
-        <div className="col-xs-12 col-md-4">
+        <div className="col-xs-12 col-md-12 col-lg-4">
           <div className="card portfolio-card">
             <img className="card-img-top" src={mealMatcher} alt="" />
             <div className="card-body">
@@ -47,7 +47,7 @@ function Portfolio() {
         </div>
       </div>
       <div className="row">
-        <div className="col-xs-12 col-md-3">
+        <div className="col-xs-12 col-md-6 col-lg-6 col-xl-3">
           <div className="card portfolio-card">
             <img className="card-img-top" src={chatApp} alt="" />
             <div className="card-body">
@@ -57,7 +57,7 @@ function Portfolio() {
             </div>
           </div>
         </div>
-        <div className="col-xs-12 col-md-3">
+        <div className="col-xs-12 col-md-6 col-lg-6 col-xl-3">
           <div className="card portfolio-card">
             <img className="card-img-top" src={empDir} alt="" />
             <div className="card-body">
@@ -67,7 +67,7 @@ function Portfolio() {
             </div>
           </div>
         </div>
-        <div className="col-xs-12 col-md-3">
+        <div className="col-xs-12 col-md-6 col-lg-6 col-xl-3">
           <div className="card portfolio-card">
             <img className="card-img-top" src={burger} alt="" />
             <div className="card-body">
@@ -77,7 +77,7 @@ function Portfolio() {
             </div>
           </div>
         </div>
-        <div className="col-xs-12 col-md-3 card-div">
+        <div className="col-xs-12 col-md-6 col-lg-6 col-xl-3 card-div">
           <div className="card portfolio-card">
             <img className="card-img-top" src={weather} alt="" />
             <div className="card-body">
