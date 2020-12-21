@@ -150,7 +150,7 @@ function Contact() {
               </div>
               <button
                 type="submit"
-                onClick={handleFormSubmit}
+                onPointerDown={handleFormSubmit}
                 className="btn btn-primary submit-btn">
                 Submit
                 </button>
