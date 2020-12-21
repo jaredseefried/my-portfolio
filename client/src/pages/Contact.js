@@ -148,12 +148,12 @@ function Contact() {
                   </textarea>
                 </div>
               </div>
-              <button
+              <a
                 type="submit"
                 onClick={()=>handleFormSubmit}
                 className="btn btn-primary submit-btn">
                 Submit
-                </button>
+                </a>
             </div>
           </div>
 

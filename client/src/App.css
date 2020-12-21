@@ -19,11 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-container {
-  /* font-family: 'Montserrat Subrayada', sans-serif; */
   height: 500px;
-  /*! background: linear-gradient(60deg,#543ab7,#00acc1); */
-  /* background: linear-gradient(-45deg, #1F9FE0 0, #2196F3); */
-  /* background-color: #1d1e3c; */
   padding-bottom: 25px;
   color: white;
 }
@@ -48,13 +44,11 @@ h1, h2, h3, h4, h5, h6 {
 .header-h1 {
   padding-bottom: 20px;
   margin: 0 auto;
-  /* font-weight: bold; */
   text-shadow: 3px 1px 1px #3c3c3c;
   font-size: 60px;
 }
 
 .header-info {
-  /* float: left; */
   font-size: 25px;
   padding-right: 25px;
   text-shadow: 3px 1px 1px #3c3c3c;
@@ -62,7 +56,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .mern-logos img {
   width: 200px;
-  /* width: 50px; */
   height: auto;
   margin: 10px auto;
 }
@@ -70,11 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 /* text animation */
 
 .typewriter {
-  /* font-size: 40px; */
   color: white;
-  /* position: absolute; */
-  /* left: 2%; */
-  /* top: 10%; */
   overflow: hidden;
   animation: animated-text 4s steps(48, end) 1s 1 normal both;
   white-space: nowrap;
@@ -99,7 +88,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 20rem;
   border-radius: 5px;
   box-shadow: 1px 1px 6px #8c8c8c;
-  /* height: 500px; */
 }
 
 .card-img-top {
@@ -113,7 +101,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
   text-overflow: ellipsis;
   height: 100px;
-  /* overflow: hidden; */
 }
 
 .card-title {
@@ -123,19 +110,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .cards-home-container {
   width: 100%;
-  /* margin: 20px auto; */
 }
 
 .cards-home-container {
   background-color: #eee;
-  /* padding: 40px 25px; */
 }
 
 .jared-img {
   width: 116px;
   border-radius: 50%;
   height: auto;
-  /* margin-left: 20px; */
 }
 
 .btn {
@@ -143,9 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-text {
-  /* display: block; */
   margin: 10px auto;
-  /* width: 70%; */
   font-size: 18px;
 }
 
@@ -157,7 +139,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-list-item {
   font-size: 20px;
-  /* margin-bottom: 10px; */
 }
 
 .list-group-item:active {
@@ -202,14 +183,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
 }
 
-.footer-text {
-  /* float: right; */
-}
-
 .contact-card {
   width: 40rem;
   margin: 0px auto;
-  /* padding: 30px 0px; */
 }
 
 .contact-title {
@@ -245,7 +221,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .github-btn {
   margin-top: 15px;
-  /* margin-left: 10px; */
 }
 
 .contact-container {
@@ -258,7 +233,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .linkedIn-btn {
   padding-top: 3px;
-  /* margin-left: 9px; */
   border-radius: 3px;
   background: linear-gradient(0deg, #0456a9, #1e85ec);
   font-size: 13px;
@@ -307,7 +281,6 @@ ul {
   .header-box {
     color: white;
     margin-top: 20px;
-    /* padding-left: 0px; */
   }
   .header-h1 {
     font-size: 40px;
@@ -323,7 +296,6 @@ ul {
   .jared-img {
     width: 116px;
     border-radius: 50%;
-    /* height: auto; */
     margin: 14px auto;
     display: block;
   }
