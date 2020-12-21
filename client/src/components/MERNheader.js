@@ -8,7 +8,7 @@ function MERNheader(){
   return (
 <div className="header-box">
         <div className="row">
-          <h1 className="header-h1 display-3 text-center">FULL STACK DEVELOPMENT</h1>
+          <h1 className="header-h1 text-center">FULL STACK DEVELOPMENT</h1>
         </div>
         <div className="col-12 mx-auto">
           <div className="row mx-auto">
