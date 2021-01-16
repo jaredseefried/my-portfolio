@@ -1,35 +1,33 @@
-# My Pandemic Tracker
-All of your COVID-19 data and news thrown into one place. 
-You can see the infection and death rates for many of the countries around the globe.
-You are also shown the most recent news regarding COVID-19.
+# My Portfolio - Built with MERN Stack. (MongoDB, Express.js, React.js and Node.js)
 
-# Table of Contens
-1. [Motivation](#motivation)
-2. [Screenshot](#screenshot)
-3. [Technology Used](#technology-used)
-4. [Features](#features)
+## Table of Contents
 
-# Motivation
-With COVID-19 being something that is so prevelant now and it's clear that this won't be leaving anytime soon we wanted to make something that could keep people informed.
-This brought the idea of making My Pandemic Tracker. Using many technologies we made an app that updates real-time on the current infection rates along with the recent news on COVID-19.
+- **[Description](#Description)**
+- **[Installation Requirements](#Installation-Requirements)**
+- **[License](#License)**
+- **[Questions](#Questions)**
 
-# Screenshot
-![Image of the main page](./client/src/images/pandemic-tracker.jpg)
+# Description
+The portfolio website is a clean and minimal site to showcase certain skills and technology used. Built on a MERN stack which utilizes NoSQL using MongoDB to record the information submitted on the Contact Form, Express.js makes an API call and emails myself upon submission of a contact form, React is the primary framework used for front-end development, built on Node to handle it all. The site follows the MVC design pattern (Model-View-Controller) which is an development architecture style commonly used in software companies. 
 
-# Technology Used
-* COVID-19 API from [Rapidapi](https://rapidapi.com/collection/coronavirus-covid-19)
-* [GNews API](https://gnews.io/)
-* [MERN Stack](https://www.mongodb.com/mern-stack)
-   * [MongoDB](https://www.mongodb.com/)
-   * [Express.js](https://expressjs.com/)
-   * [React.js](https://reactjs.org/)
-   * [Node.js](https://nodejs.org/en/)
-* [React Globe](https://react-globe.netlify.app/)
-* [Axios](https://www.npmjs.com/package/axios)
-* [Bootstrap](https://getbootstrap.com/)
-* [Particles](https://vincentgarreau.com/particles.js/)
+ ### https://denver-dev.herokuapp.com/
 
-# Features
-* Real-time updates on the infection rates of COVID-19
-* A globe the user can go around to select a specific country
-* Real-time news updates about COVID-19 from google
+# Installation Requirements
+'NPM i' on root folder
+
+React
+Bootstrap
+Express
+Mongo mongoose
+Nodemailer
+Vanta
+
+# License
+
+MIT
+
+# Have Questions?
+
+## [Github Profile: github.com/jaredseefried](https://github.com/jaredseefried "Title")
+
+Please email me at jared.seefried@yahoo.com if you have additional questions.
