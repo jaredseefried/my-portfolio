@@ -49,7 +49,7 @@ function Contact() {
         email: "",
         subject: ""
       }))
-      .then(()=>{
+      .then(() => {
         axios({
           method: "POST",
           url: "/api/sendMail",
@@ -57,7 +57,7 @@ function Contact() {
         }).then((response) => {
           if (response.data.status === 'success') {
             alert("Message Sent.");
-            
+
           } else if (response.data.status === 'fail') {
             alert("Message failed to send.")
           }
@@ -147,15 +147,15 @@ function Contact() {
                     value={contactForm.subject}>
                   </textarea>
                 </div>
-              </div>
-              <button
-                type="submit"
-                onClick={handleFormSubmit}
-                onSubmit={handleFormSubmit}
-                onTouchStart={handleFormSubmit}
-                className="btn btn-primary submit-btn">
-                Submit
+                <button
+                  type="submit"
+                  onClick={handleFormSubmit}
+                  onSubmit={handleFormSubmit}
+                  onTouchStart={handleFormSubmit}
+                  className="btn btn-primary submit-btn">
+                  Submit
                 </button>
+              </div>
             </div>
           </div>
 
