@@ -10,7 +10,9 @@
 # Description
 The portfolio website is a clean and minimal site to showcase certain skills and technology used. Built on a MERN stack which utilizes NoSQL using MongoDB to record the information submitted on the Contact Form, Express makes an API call and emails myself upon submission of a contact form, React is the primary framework used for front-end development, built on Node to handle it all. The site follows the MVC design pattern (Model-View-Controller) which is an development architecture style commonly used in software companies. 
 
- ### https://denver-dev.herokuapp.com/
+ ### Deployed Site @ https://denver-dev.herokuapp.com/
+---
+ ![Jared Seefrieds Portfolio](./client/src/images/front-page.jpg)
 
 # Installation Requirements
 
