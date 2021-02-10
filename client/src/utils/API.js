@@ -9,3 +9,4 @@ export default {
     return axios.post("/api/contacts", data)
   }
 }
+
