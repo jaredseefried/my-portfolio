@@ -22,7 +22,7 @@ function Portfolio() {
               <h5 className="card-title">Pandemic Tracker</h5>
               <p className="card-text">A MERN (Mongo, Express, React and Node) Application using React-Globe and API's to show updated stats on Covid-19. </p>
               <a href="https://covid19-pandemic-tracker.herokuapp.com/" target="_blank" rel="noreferrer" className="btn btn-primary">Live Site!</a>
-              <a href="https://github.com/jaredseefried/pandemic-tracker" target="_blank" rel="noreferrer" ><FiGithub className="github-link" /></a>
+              <a href="https://github.com/jaredseefried/covid19-pandemic-tracker" target="_blank" rel="noreferrer" ><FiGithub className="github-link" /></a>
             </div>
           </div>
         </div>
