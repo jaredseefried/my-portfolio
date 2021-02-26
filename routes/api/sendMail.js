@@ -27,7 +27,7 @@ router.route("/")
     const name = req.body.firstName + " " + req.body.lastName
     const email = req.body.email
     const subject = req.body.subject
-    // const message = req.body.message
+    const message = req.body.message
 
     const mail = {
       from: process.env.EMAIL,

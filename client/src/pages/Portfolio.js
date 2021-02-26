@@ -21,7 +21,7 @@ function Portfolio() {
             <div className="card-body">
               <h5 className="card-title">Pandemic Tracker</h5>
               <p className="card-text">A MERN (Mongo, Express, React and Node) Application using React-Globe and API's to show updated stats on Covid-19. </p>
-              <a href="https://pandemic-tracking.herokuapp.com" target="_blank" rel="noreferrer"  className="btn btn-primary">Live Site!</a>
+              <a href="https://covid19-pandemic-tracker.herokuapp.com/" target="_blank" rel="noreferrer" className="btn btn-primary">Live Site!</a>
               <a href="https://github.com/jaredseefried/pandemic-tracker" target="_blank" rel="noreferrer" ><FiGithub className="github-link" /></a>
             </div>
           </div>
@@ -67,7 +67,7 @@ function Portfolio() {
             <div className="card-body">
               <h5 className="card-title">Employee Directory</h5>
               <p className="card-text">The directory is built on React and uses class components to utilize states. Requires the use of .map and .sort methods using arrays. </p>
-              <a href="https://my-employee-directory-react.herokuapp.com/" target="blank"  rel="noreferrer" className="btn btn-primary">Live Site!</a>
+              <a href="https://my-employee-directory-react.herokuapp.com/" target="blank" rel="noreferrer" className="btn btn-primary">Live Site!</a>
               <a href="https://github.com/jaredseefried/employee-directory-with-react" target="_blank" rel="noreferrer" ><FiGithub className="github-link" /></a>
             </div>
           </div>
@@ -78,7 +78,7 @@ function Portfolio() {
             <div className="card-body">
               <h5 className="card-title">Eat-Da-Burger</h5>
               <p className="card-text">A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM. I create a MVC design pattern to separate information.</p>
-              <a href="https://east-da-burger-mvc.herokuapp.com/" target="blank" rel="noreferrer" className="btn btn-primary">Live Site!</a>
+              <a href="https://eat-da-burger-mvc-mysql.herokuapp.com/" target="blank" rel="noreferrer" className="btn btn-primary">Live Site!</a>
               <a href="https://github.com/jaredseefried/Eat-Da-Burger" target="_blank" rel="noreferrer" ><FiGithub className="github-link" /></a>
             </div>
           </div>
