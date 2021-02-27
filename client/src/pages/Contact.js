@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-// import ReactDOM from "react-dom"
 import GitHubButton from 'react-github-btn'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import API from '../../src/utils/API'
 import axios from 'axios'
+import jared from '../images/jared.png'
 
 function Contact() {
 
@@ -21,9 +21,9 @@ function Contact() {
   function loadContacts() {
     API.getContacts()
       .then((response) => {
-        const data = response.data
-        console.log(data);
-        console.log("Mongo Connected - Array Generated")
+        // const data = response.data
+        // console.log(data);
+        // console.log("Mongo Connected - Array Generated")
       })
       .catch((error) => {
         console.log(error);
@@ -77,7 +77,7 @@ function Contact() {
           <div className="col-xs-12 col-md-8">
             <div className="card-body card-div-contact">
               <h3 className="card-title contact-title">Contact Me</h3>
-              <img className="profile-pic" src="https://media-exp1.licdn.com/dms/image/C4D03AQENlNjfEIoPPA/profile-displayphoto-shrink_200_200/0?e=1612396800&v=beta&t=06h6r51Q-TsFfTBawlWya48P1r38hefhWy6nZmK_5eo" alt="..." />
+              <img className="profile-pic" src={jared} alt="..." />
               <div className="contact-info">
                 <h6 className="info">Jared Seefried</h6>
                 <h6 className="info">303-638-4230</h6>
