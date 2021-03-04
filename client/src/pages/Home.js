@@ -8,9 +8,9 @@ import Cards from '../components/Cards'
 function Home() {
   return (
     <>
-    <Header />
-    <MernList />
-    <Cards />
+      <Header />
+      <MernList />
+      <Cards />
     </>
   )
 }

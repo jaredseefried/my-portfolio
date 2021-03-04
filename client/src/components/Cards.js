@@ -1,4 +1,5 @@
 import React from 'react'
+import MyResume from '../assets/Resume.docx'
 
 function Cards() {
   return (
@@ -8,9 +9,9 @@ function Cards() {
           <div className="card portfolio-card">
             <img className="card-img-top" src="https://d9qtyz43wogdd.cloudfront.net/pixpacom/images/homebanner-image.jpg" alt="" />
             <div className="card-body">
-              <h5 className="card-title">Development</h5>
-              <p className="card-text">Coming Soon...</p>
-              <a href="/" className="btn btn-primary">Go There!</a>
+              <h5 className="card-title">Resume</h5>
+              <p className="card-text">Download Resume</p>
+              <a href={MyResume} download='Resume' className="btn btn-primary">Download!</a>
             </div>
           </div>
         </div>
@@ -30,7 +31,7 @@ function Cards() {
             <div className="card-body">
               <h5 className="card-title">Contact</h5>
               <p className="card-text">Fill out the Contact Form and send me a message. </p>
-              <a href="/contact" className="btn btn-primary">Go There!</a>
+              <a href="/contact" className="btn btn-primary">Contact Me!</a>
             </div>
           </div>
         </div>

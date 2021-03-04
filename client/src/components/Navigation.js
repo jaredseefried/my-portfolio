@@ -20,6 +20,9 @@ function Navigation() {
               <li className="nav-item">
                 <a className="nav-link" href="/contact" rel="noreferrer">Contact</a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/resume" rel="noreferrer">Resume</a>
+              </li>
             </ul>
           </div>
         </div>

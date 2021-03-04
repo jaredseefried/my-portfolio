@@ -13,8 +13,8 @@ function Footer() {
         </div>
         <div className="col-xs-12 col-md-3">
           <ul>
-          <a href="https://github.com/jaredseefried"><li className="footer-list-item"><AiFillGithub className="footer-icon github-icon" /></li></a>
-          <a href="https://linkedin.com/in/jaredseefried"><li className="footer-list-item"><FaLinkedinIn className="footer-icon linkedin-icon" /></li></a>
+            <a href="https://github.com/jaredseefried"><li className="footer-list-item"><AiFillGithub className="footer-icon github-icon" /></li></a>
+            <a href="https://linkedin.com/in/jaredseefried"><li className="footer-list-item"><FaLinkedinIn className="footer-icon linkedin-icon" /></li></a>
           </ul>
         </div>
         <div className="col-xs-12 col-md-3">
@@ -22,7 +22,7 @@ function Footer() {
             <a href="/"><li className="footer-list-item">Home</li></a>
             <a href="/portfolio"><li className="footer-list-item">Portfolio</li></a>
             <a href="/contact"><li className="footer-list-item">Contact</li></a>
-            
+            <a href='/resume' ><li className="footer-list-item">Resume</li></a>
           </ul>
         </div>
       </div>
