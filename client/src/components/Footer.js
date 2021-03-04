@@ -9,7 +9,7 @@ function Footer() {
       <div className="row">
         <div className="col-xs-12 col-md-5 about-section">
           <img className="jared-img" src={jaredPic} alt="..." />
-          <p className="footer-text">Hi, I'm Jared! I'm a Full Stack Developer with a certification from the University of Denver and hold my Bachelors of Science in Business Marketing.</p>
+          <p className="footer-text">With a certificate in Full Stack Web Development, focusing on JavaScript and Node.js, this experienced technical engineer has 10+ years of experience working within Agile development life cycles as an active team contributor, result driven problem solver with a desire to master Object-Oriented Programming. </p>
         </div>
         <div className="col-xs-12 col-md-3">
           <ul>

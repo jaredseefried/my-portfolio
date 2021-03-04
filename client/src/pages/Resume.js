@@ -17,7 +17,7 @@ function Resume(props) {
         </div>
         <div className="row col-12">
           <h2 className="text-center section-header col-12">Professional Summary</h2>
-          <p className="summary">An experienced technical professional with a certificate in Full Stack Web Development and a passion for application development, I am interested in joining an organization where I can combine my knowledge and experience to create innovative products and solve real-world challenges.</p>
+          <p className="summary">With a certificate in Full Stack Web Development, focusing on JavaScript and Node.js, this experienced technical engineer has 10+ years of experience working within Agile development life cycles as an active team contributor, result driven problem solver with a desire to master Object-Oriented Programming.</p>
         </div>
         <div className="row col-12">
           <h2 className="text-center section-header col-12">Technical Skills</h2>
