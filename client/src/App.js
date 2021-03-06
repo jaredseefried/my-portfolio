@@ -1,25 +1,33 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
 import "./App.css";
-import Home from '../src/pages/Home'
-import Navigation from '../src/components/Navigation'
-import Footer from './components/Footer'
-import Portfolio from './pages/Portfolio'
-import Contact from './pages/Contact'
-import Resume from "./pages/Resume";
+import Routes from "./Routes";
+import Nav from "react-bootstrap/Nav";
+import { LinkContainer } from "react-router-bootstrap";
 
 function App() {
   return (
-    <Router>
-      <div className="App container col-12">
-        <Navigation />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/resume" component={Resume} />
-        <Footer />
-      </div>
-    </Router>
+    <div className="App">
+      <Navbar collapseOnSelect expand="md" className="mb-3">
+        <LinkContainer to="/">
+          <Navbar.Brand className="font-weight-bold text-muted">
+            Web Dev
+          </Navbar.Brand>
+        </LinkContainer>
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          <Nav activeKey={window.location.pathname}>
+            <LinkContainer to="/signup">
+              <Nav.Link>Signup</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/login">
+              <Nav.Link>Login</Nav.Link>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      <Routes />
+    </div>
   );
 }
 
