@@ -1,10 +1,11 @@
 .main-content-container {
   color: white;
-  position: absolute;
   top: 27vh;
-  left: 10vh;
-  width: 90%;
-  z-index: 1;
+  width: 100%;
+}
+
+.main-h1, .main-h3 {
+  padding-left: 25px;
 }
 
 .main-h3 {
@@ -67,4 +68,52 @@
   to {
     color: white;
   }
+}
+
+#mainwebdev {
+  position: absolute;
+  top: -115px;
+  right: 130px;
+  width: 74%;
+}
+
+.buttons-container {
+  margin-left: 25px;
+}
+
+#portfolio-button {
+  margin-top: 80px;
+  color: #00acfc;
+  border-color: #00acfc;
+  font-size: 30px;
+  background-color: transparent;
+  box-shadow: 2px 1px 0px #00acfc;
+}
+
+#portfolio-button:hover {
+  color: #000;
+  border-color: #000;
+  background-color: #00acfc;
+  font-size: 30px;
+}
+
+#contact-button {
+  margin-top: 80px;
+  margin-left: 50px;
+  color: #695ca8;
+  border-color: #695ca8;
+  font-size: 30px;
+  background-color: transparent;
+  box-shadow: 2px 1px 0px #695ca8;
+}
+
+#contact-button:hover {
+  color: #000;
+  border-color: #000;
+  background-color: #695ca8;
+  font-size: 30px;
+}
+
+.row-container {
+  position: relative;
 }

@@ -1,3 +1,9 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
 select.form-control, textarea.form-control, input.form-control {
   font-size: 1rem;
 }

@@ -1,6 +1,17 @@
 import React, { Component } from 'react'
 import Particles from "react-tsparticles";
 
+const colorsArray = ['#695ca8', '#00acfc', '#fff', '#696969']
+
+const randomColors = (color) => {
+  let i = Math.floor(Math.random() * colorsArray.length);
+  if (color && i in colorsArray) {
+    return colorsArray.splice(i, 1)[0]
+  }
+  return colorsArray[i]
+}
+
+
 class ParticlesBG extends Component {
   constructor(props) {
     super(props);
@@ -63,7 +74,7 @@ class ParticlesBG extends Component {
           },
           particles: {
             color: {
-              value: "rgba(255, 255, 255, 0.3)",
+              value: 'rgba(255, 255, 255, 0.3)',
             },
             links: {
               color: "#fff",
