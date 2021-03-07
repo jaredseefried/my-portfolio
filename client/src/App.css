@@ -1,1 +1,12 @@
-.App {}
+.navbar {
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar-light .navbar-brand {
+  color: rgb(255 255 255 / 90%);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+}

@@ -1,0 +1,19 @@
+@media all and (min-width: 480px) {
+  .Signup {
+    padding: 60px 0;
+  }
+  .Signup form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+  .password-reqs {
+    border: 1px solid #ced4da;
+    padding: 5px;
+  }
+  #password-header {
+    font-weight: bold;
+  }
+  .password-text {
+    font-size: medium;
+  }
+}
