@@ -1,14 +1,16 @@
 import React from 'react';
 import './Languages.css'
 
-function Languages() {
-  return (
-    <div className="languages-container col-12">
-      <div className="row">
-        <h1>Languages</h1>
-      </div>
-    </div>
-  );
+function Languages(props) {
+
+  return <img
+    src={props.src}
+    className='language-logo'
+    alt={props.alt}
+    id={props.alt} />
+
 }
+
+
 
 export default Languages;
