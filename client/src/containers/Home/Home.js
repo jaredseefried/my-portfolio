@@ -1,26 +1,26 @@
 import React from "react";
 
 // Containers
-import Languages from "./Languages";
-import Main from "./Main";
+import Languages from "../Languages/Languages";
+import Main from "../MainHeader/Main";
+import Features from "../Features/Features.js";
 
 // CSS
 import "./Home.css";
 
 //Particles.js
-import Particles from './Particles'
+import Particles from '../Particles/Particles'
 
 // Images
-import HTMLLogo from '../images/html-logo.png'
-import CSSLogo from '../images/css-logo.png'
-import JavaScriptLogo from '../images/javascript-logo.png'
-import MongoDB from '../images/mongoDB-logo.png'
-import ExpressJS from '../images/express-logo.png'
-import ReactJS from '../images/react-logo.png'
-import NodeJS from '../images/node-logo.png'
-import AWS from '../images/aws-cloud-logo.png'
-import Serverless from '../images/serverless-logo.png'
-import Features from "./Features";
+import HTMLLogo from '../../images/html-logo.png'
+import CSSLogo from '../../images/css-logo.png'
+import JavaScriptLogo from '../../images/javascript-logo.png'
+import MongoDB from '../../images/mongoDB-logo.png'
+import ExpressJS from '../../images/express-logo.png'
+import ReactJS from '../../images/react-logo.png'
+import NodeJS from '../../images/node-logo.png'
+import AWS from '../../images/aws-cloud-logo.png'
+import Serverless from '../../images/serverless-logo.png'
 
 export default function Home() {
 

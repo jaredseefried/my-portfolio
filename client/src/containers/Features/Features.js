@@ -1,6 +1,6 @@
 import React from 'react';
-import FeaturedCard from '../components/FeaturedCard';
-import WebAppDev from '../images/full-stack-developer-main.jpg'
+import FeaturedCard from '../../components/FeaturedCard/FeaturedCard';
+import WebAppDev from '../../images/full-stack-developer-main.jpg'
 
 import './Features.css'
 

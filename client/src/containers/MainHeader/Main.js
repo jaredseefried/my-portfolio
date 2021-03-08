@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Main.css'
 import styled, { keyframes } from 'styled-components'
-import mainWebDev from '../images/mainWebDev.png'
-import Button from '../components/Button'
+import mainWebDev from '../../images/mainWebDev.png'
+import Button from '../../components/Button/Button'
 
 function Main(props) {
   const adjectives = ['Interactive', 'Professional', 'Beautiful', 'Functional', 'Innovative']

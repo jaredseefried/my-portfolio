@@ -30,3 +30,7 @@
   transform: scale(1.5);
   opacity: 0.8;
 }
+
+.tilt {
+  margin: 0 auto;
+}
