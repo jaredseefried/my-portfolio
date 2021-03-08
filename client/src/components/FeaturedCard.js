@@ -1,15 +1,19 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import './FeaturedCard.css'
 
 function FeaturedCard(props) {
   return (
-    <Card border="dark" className="col-4" style={{ width: '24rem' }}>
-      <Card.Img
-        variant="top"
-        src={props.src}
-        alt={props.alt}
-        className={props.className}
-        id={props.className + '-' + props.id} />
+    <Card className='featured-card'>
+      <div className='img-wrapper'>
+        <Card.Img
+          variant="top"
+          src={props.src}
+          alt={props.alt}
+          className={props.className}
+          id={props.className + '-' + props.id} />
+        <div className="overlay"></div>
+      </div>
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>
