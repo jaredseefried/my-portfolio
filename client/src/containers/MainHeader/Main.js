@@ -3,6 +3,7 @@ import './Main.css'
 import styled, { keyframes } from 'styled-components'
 import mainWebDev from '../../images/mainWebDev.png'
 import Button from '../../components/Button/Button'
+import Container from '../../components/Container/Container'
 
 function Main(props) {
   const adjectives = ['Interactive', 'Professional', 'Beautiful', 'Functional', 'Innovative']
@@ -35,7 +36,7 @@ function Main(props) {
   `;
 
   return (
-    <div className="main-content-container container-fluid col-12">
+    <Container className='main-container container-fluid col-12'>
       <div className='row col-12'>
         <div className="col-6">
           <h1 className="main-h1">You Too Deserve A Website That's</h1>
@@ -60,7 +61,7 @@ function Main(props) {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }
 

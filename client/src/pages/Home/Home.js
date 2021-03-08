@@ -1,15 +1,16 @@
 import React from "react";
 
 // Containers
-import Languages from "../Languages/Languages";
-import Main from "../MainHeader/Main";
-import Features from "../Features/Features.js";
+import Languages from "../../containers/Languages/Languages";
+import Main from "../../containers/MainHeader/Main";
+import Features from "../../containers/Features/Features.js";
+import MyProjects from '../../containers/MyProjects/MyProjects'
 
 // CSS
 import "./Home.css";
 
 //Particles.js
-import Particles from '../Particles/Particles'
+import Particles from '../../containers/Particles/Particles'
 
 // Images
 import HTMLLogo from '../../images/html-logo.png'
@@ -94,6 +95,7 @@ export default function Home() {
         </div>
       </div>
       <Features />
+      <MyProjects />
     </>
   );
 }
