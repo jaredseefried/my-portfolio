@@ -4,7 +4,7 @@ import './Button.css'
 
 function ButtonComponent(props) {
   return (
-    <Button type={props.type} variant={props.variant} className={`button-component ${props.className}`} id={props.id}>{props.children}</Button>
+    <Button type={props.type} variant={props.variant} href={props.href} className={`button-component ${props.className}`} id={props.id}>{props.children}</Button>
   );
 }
 

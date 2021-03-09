@@ -48,12 +48,16 @@ function Main(props) {
         </div>
         <div className="buttons-container col-12">
           <div className="row row-container col-6">
-            <Button type="button" variant='outline-primary'
+            <Button type="button"
+              variant='outline-primary'
+              href='#projects-container'
               className="portfolio-button"
               id="portfolio-button" >
               Portfolio
               </Button>
-            <Button type="button" variant='outline-secondary'
+            <Button type="button"
+              variant='outline-secondary'
+              href='#contact-container'
               className="contact-button"
               id="contact-button" >
               Contact

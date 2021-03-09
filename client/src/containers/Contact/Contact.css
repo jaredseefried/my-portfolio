@@ -22,3 +22,9 @@
   left: 0%;
   top: 14%;
 }
+
+.contact-wrapper .form-group {
+  margin-bottom: 1rem;
+  width: 85%;
+  margin: 26px auto;
+}
