@@ -5,6 +5,8 @@ import Languages from "../../containers/Languages/Languages";
 import Main from "../../containers/MainHeader/Main";
 import Features from "../../containers/Features/Features.js";
 import MyProjects from '../../containers/MyProjects/MyProjects'
+import Contact from '../../containers/Contact/Contact'
+import Footer from "../../containers/Footer/Footer";
 
 // CSS
 import "./Home.css";
@@ -91,11 +93,12 @@ export default function Home() {
               alt={image.alt}
               id={image.alt} />
           ))}
-
         </div>
       </div>
       <Features />
       <MyProjects />
+      <Contact />
+      <Footer />
     </>
   );
 }

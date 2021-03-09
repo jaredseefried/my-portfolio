@@ -97,7 +97,7 @@
   font-size: 30px;
 }
 
-#contact-button {
+#contact-button, #send-button {
   margin-top: 80px;
   margin-left: 50px;
   color: #695ca8;
@@ -107,7 +107,7 @@
   box-shadow: 2px 1px 0px #695ca8;
 }
 
-#contact-button:hover {
+#contact-button:hover, #send-button:hover {
   color: #000;
   border-color: #000;
   background-color: #695ca8;
