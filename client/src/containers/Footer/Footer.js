@@ -15,7 +15,7 @@ import './Footer.css'
 
 function Footer(props) {
   return (
-    <Container className='footer-container col-12'>
+    <Container className='footer-container col-12' id='footer-container'>
       <div className='row' style={{ padding: '20px 0px', height: '100%' }}>
         <div className='about-me col-6'>
           <img className='jared-img' src={Jared} alt='Jared Seefried' />

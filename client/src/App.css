@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  /* position: fixed; */
+  background-color: rgba(0, 0, 0, 0.705);
   z-index: 1;
 }
 
@@ -17,4 +17,31 @@
 
 .navbar-light .navbar-nav .nav-link {
   color: rgb(255, 255, 255);
+}
+
+.nav-link, .nav-link:active {
+  color: #fff;
+  font-size: larger;
+  border-color: none;
+}
+
+.nav-link:hover {
+  background-color: #695ca8;
+  border-radius: 5px;
+  color: white;
+  border-color: 5px solid white;
+}
+
+.nav-brand-link {
+  font-size: larger;
+  color: white;
+  margin: 0px 25px;
+  padding: 5px 10px;
+}
+
+.nav-brand-link:hover {
+  background-color: #00acfc;
+  border-radius: 5px;
+  color: white;
+  border-color: 5px solid white;
 }

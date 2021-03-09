@@ -35,7 +35,7 @@ function Features() {
   ]
 
   return (
-    <div className="features-container col-12">
+    <div className="features-container col-12" id='features-container'>
       <div className='features-wrapper'>
         <div className='row'>
           <h1 className='display-3 text-center col-12'>Features</h1>

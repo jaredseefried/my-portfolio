@@ -83,7 +83,7 @@ function MyProjects() {
   ]
 
   return (
-    <div className="projects-container col-12">
+    <div className="projects-container col-12" id='projects-container'>
       <div className='projects-wrapper'>
         <div className='row'>
           <h1 className='display-3 text-center col-12 projects-title'>My Projects</h1>

@@ -1,12 +1,17 @@
+//Dependencies
 import React, { useState, useEffect } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import "./App.css";
-import Routes from "./Routes";
-import Nav from "react-bootstrap/Nav";
+import { useHistory } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
+import { HashLink as Link } from 'react-router-hash-link';
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+
 import { AppContext } from "./libs/contextLib";
 import { Auth } from "aws-amplify";
-import { useHistory } from "react-router-dom";
+
+import Routes from "./Routes";
+
+import "./App.css";
 
 function App() {
   const [isAuthenticated, userHasAuthenticated] = useState(false);
@@ -43,11 +48,24 @@ function App() {
     !isAuthenticating && (
       <div className="App">
 
-        <Navbar collapseOnSelect expand="md" className="mb-3">
+        <Navbar fixed='top' collapseOnSelect expand="md" className="mb-3">
           <LinkContainer to="/">
-            <Navbar.Brand className="font-weight-bold">
-              Web Dev
-            </Navbar.Brand>
+            <Link to='#home-container' className="font-weight-bold nav-brand-link">Web Dev</Link>
+          </LinkContainer>
+          <LinkContainer to='/'>
+            <Link className='nav-link' to="#languages-container">Skills</Link>
+          </LinkContainer>
+          <LinkContainer to='/'>
+            <Link className='nav-link' to="#features-container">Features</Link>
+          </LinkContainer>
+          <LinkContainer to='/'>
+            <Link className='nav-link' to="#projects-container">My Projects</Link>
+          </LinkContainer>
+          <LinkContainer to='/'>
+            <Link className='nav-link' to="#contact-container">Contact</Link>
+          </LinkContainer>
+          <LinkContainer to='/'>
+            <Link className='nav-link' to="#footer-container">Footer</Link>
           </LinkContainer>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
@@ -70,7 +88,7 @@ function App() {
         <AppContext.Provider value={{ isAuthenticated, userHasAuthenticated }}>
           <Routes />
         </AppContext.Provider>
-      </div>
+      </div >
     )
   );
 }

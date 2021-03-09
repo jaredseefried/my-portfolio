@@ -10,7 +10,7 @@ import './Contact.css';
 
 function Contact(props) {
   return (
-    <Container className='contact-container col-12'>
+    <Container className='contact-container col-12' id='contact-container'>
       <div className='contact-wrapper'>
         <div className='row'>
           <h1 className="display-3 text-center col-12" style={{ color: 'white', marginTop: '10px' }}>Contact</h1>

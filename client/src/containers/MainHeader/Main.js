@@ -36,7 +36,7 @@ function Main(props) {
   `;
 
   return (
-    <Container className='main-container container-fluid col-12'>
+    <Container className='main-container container-fluid col-12' id='main-container'>
       <div className='row col-12'>
         <div className="col-6">
           <h1 className="main-h1">You Too Deserve A Website That's</h1>
