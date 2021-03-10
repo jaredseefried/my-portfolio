@@ -9,6 +9,7 @@
   color: white;
 }
 
-.projects-wrapper {
-  padding-top: 50px;
+.project-card {
+  width: 16rem;
+  margin-bottom: 38px;
 }

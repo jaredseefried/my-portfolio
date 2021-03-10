@@ -20,7 +20,7 @@ function MyProjects() {
       src: WebAppDev,
       className: '234',
       id: '123',
-      title: 'Covid19 Pandemic Tracker',
+      title: 'Pandemic Tracker',
       text: "The tracker is web application using MERN Stack, (MongoDB, Express.js, React.js and Node.js). The application uses React Globe and Generates Data from an external API to update the the state of the statistics container. Users can select a country and that specific countries Covid Data will populate. Additional API's to generate data by US State from a drop down menu as well as a New API that populates 2 news articles from the 'Covid' Keyword.",
       tech: '',
       alt: 'alt text'

@@ -4,10 +4,6 @@
   width: 100%;
 }
 
-.main-h1, .main-h3 {
-  padding-left: 25px;
-}
-
 .main-h3 {
   position: absolute;
   font-weight: lighter;
@@ -72,13 +68,9 @@
 
 #mainwebdev {
   position: absolute;
-  top: -115px;
-  right: 130px;
-  width: 74%;
-}
-
-.buttons-container {
-  margin-left: 25px;
+  top: -71px;
+  right: 84px;
+  width: 70%;
 }
 
 #portfolio-button {

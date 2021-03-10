@@ -55,7 +55,7 @@ function Contact(props) {
           <Form.Control
             name='name'
             placeholder='Name'
-            autoFocus
+            // autoFocus
             type="name"
             value={fields.name}
             onChange={handleFieldChange}
@@ -66,7 +66,7 @@ function Contact(props) {
           <Form.Control
             name='email'
             placeholder='email'
-            autoFocus
+            // autoFocus
             type="email"
             value={fields.email}
             onChange={handleFieldChange}
@@ -75,9 +75,10 @@ function Contact(props) {
         <Form.Group controlId="formHorizontalTextarea" size="lg" controlId="textarea">
 
           <Form.Control
+            as='textarea'
             name='textarea'
             placeholder='Message...'
-            autoFocus
+            // autoFocus
             type="textarea"
             value={fields.textarea}
             onChange={handleFieldChange}
