@@ -1,3 +1,21 @@
 .project-card {
   width: 16rem;
 }
+
+.project-card .card-img-top {
+  transition: all 1s ease;
+  opacity: 1;
+  min-height: 150px;
+  max-height: 150px;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-card .card-img-top:hover {
+  transition: all 1s ease;
+  opacity: .5;
+  min-height: 150px;
+  max-height: 150px;
+  height: auto;
+  object-fit: cover;
+}
