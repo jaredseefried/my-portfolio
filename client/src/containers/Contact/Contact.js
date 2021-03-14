@@ -1,13 +1,17 @@
+// Dependencies
 import React, { useState } from 'react';
-import axios from 'axios'
 import Form from "react-bootstrap/Form";
-import LoaderButton from "../../components/LoaderButton/LoaderButton";
+import axios from 'axios'
+
+// Libs
 import { onError } from "../../libs/errorLib";
+import { useFormFields } from "../../libs/hooksLib";
+
 // Components
 import Container from '../../components/Container/Container';
-import Input from '../../components/Input/Input';
 import Button from '../../components/Button/Button';
-import { useFormFields } from "../../libs/hooksLib";
+import Input from '../../components/Input/Input';
+import LoaderButton from "../../components/LoaderButton/LoaderButton";
 
 // CSS
 import './Contact.css';
@@ -34,14 +38,15 @@ function Contact(props) {
       }).then((response) => {
         if (response.data.status === 'success') {
           alert("Message Sent.");
+          setIsLoading(false);
 
         } else if (response.data.status === 'fail') {
           alert("Message failed to send.")
+          setIsLoading(false);
         }
       })
     } catch (e) {
       onError(e);
-      setIsLoading(false);
     }
   }
 
@@ -84,12 +89,14 @@ function Contact(props) {
             onChange={handleFieldChange}
           />
         </Form.Group>
-        <Button type="button"
-          variant='outline-primary'
-          className="send-button col-7"
-          id="send-button" >
+        <LoaderButton
+          block
+          size="lg"
+          type="submit"
+          isLoading={isLoading}
+        >
           Send
-        </Button>
+        </LoaderButton>
 
       </Form>
 
