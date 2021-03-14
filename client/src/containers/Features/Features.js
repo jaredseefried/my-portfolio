@@ -57,7 +57,6 @@ function Features() {
             />
           ))}
         </div>
-
       </div>
     </div>
   );
