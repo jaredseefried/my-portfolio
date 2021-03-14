@@ -19,11 +19,16 @@ import './Contact.css';
 function Contact(props) {
   const [isLoading, setIsLoading] = useState(false);
 
-  const [fields, handleFieldChange] = useFormFields({
+  const [fields, setFields] = useState({
     name: "",
     email: "",
     textarea: ""
   });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFields({ ...fields, [name]: value })
+  }
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -38,8 +43,12 @@ function Contact(props) {
       }).then((response) => {
         if (response.data.status === 'success') {
           alert("Message Sent.");
-          setIsLoading(false);
-
+          setIsLoading(false)
+          setFields({
+            name: "",
+            email: "",
+            textarea: ""
+          })
         } else if (response.data.status === 'fail') {
           alert("Message failed to send.")
           setIsLoading(false);
@@ -63,7 +72,7 @@ function Contact(props) {
             // autoFocus
             type="name"
             value={fields.name}
-            onChange={handleFieldChange}
+            onChange={handleInputChange}
           />
         </Form.Group>
         <Form.Group controlId="formHorizontalEmail" size="lg" controlId="email">
@@ -74,7 +83,7 @@ function Contact(props) {
             // autoFocus
             type="email"
             value={fields.email}
-            onChange={handleFieldChange}
+            onChange={handleInputChange}
           />
         </Form.Group>
         <Form.Group controlId="formHorizontalTextarea" size="lg" controlId="textarea">
@@ -86,7 +95,7 @@ function Contact(props) {
             // autoFocus
             type="textarea"
             value={fields.textarea}
-            onChange={handleFieldChange}
+            onChange={handleInputChange}
           />
         </Form.Group>
         <LoaderButton
