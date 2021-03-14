@@ -16,6 +16,7 @@ import Particles from '../../containers/Particles/Particles'
 
 // Components
 import Container from "../../components/Container/Container";
+import MyModal from "../../components/Modal/Modal";
 
 export default function Home() {
 
@@ -27,6 +28,7 @@ export default function Home() {
       <Languages />
       <Features />
       <MyProjects />
+      <MyModal />
       <Contact />
       <Footer />
     </Container>

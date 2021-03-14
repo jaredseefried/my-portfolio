@@ -1,6 +1,9 @@
 import React from 'react';
 import FeaturedCard from '../../components/FeaturedCard/FeaturedCard';
 import WebAppDev from '../../images/full-stack-developer-main.jpg'
+import Node from '../../images/2hjc9n8hifpf121uhjzw.jpg'
+import reactLogo from '../../images/reactjs.png'
+import Responsive from '../../images/responsive.png'
 
 import './Features.css'
 
@@ -8,26 +11,26 @@ function Features() {
 
   const featured = [
     {
-      src: WebAppDev,
+      src: Node,
       className: '234',
       id: '123',
-      title: 'Web Application Development',
+      title: 'Back End Development',
       text: 'this is text for the description',
       alt: 'alt text'
     },
     {
-      src: WebAppDev,
+      src: reactLogo,
       className: '234',
       id: '123',
-      title: 'Web Application Development',
+      title: 'Front End Development',
       text: 'this is text for the description',
       alt: 'alt text'
     },
     {
-      src: WebAppDev,
+      src: Responsive,
       className: '234',
       id: '123',
-      title: 'Web Application Development',
+      title: 'Responsive Design',
       text: 'this is text for the description',
       alt: 'alt text'
     },
