@@ -13,7 +13,7 @@ ul {
   list-style: none;
 }
 
-svg.footer-icon.github-icon, svg.footer-icon.linkedin-icon {
+svg.footer-icon.github-icon, svg.footer-icon.linkedin-icon, svg.footer-icon.twitter-icon {
   width: 3em;
   height: 2em;
   margin-top: 20px;

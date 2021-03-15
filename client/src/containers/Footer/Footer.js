@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiFillGithub } from 'react-icons/ai'
-import { FaLinkedinIn } from 'react-icons/fa'
+import { FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 
 // Containers
 import Container from '../../components/Container/Container';
@@ -23,11 +23,11 @@ function Footer(props) {
         </div>
         <div className='social-links col-2 d-flex flex-row-reverse'>
           <ul>
-            <a href="https://github.com/jaredseefried"><li className="footer-list-item"><AiFillGithub className="footer-icon github-icon" /></li></a>
+            <a href="https://github.com/jaredseefried" target='_blank'><li className="footer-list-item"><AiFillGithub className="footer-icon github-icon" /></li></a>
 
-            <a href="https://linkedin.com/in/jaredseefried"><li className="footer-list-item"><FaLinkedinIn className="footer-icon linkedin-icon" /></li></a>
+            <a href="https://linkedin.com/in/jaredseefried" target='_blank'><li className="footer-list-item"><FaLinkedinIn className="footer-icon linkedin-icon" /></li></a>
 
-            <a href="https://linkedin.com/in/jaredseefried"><li className="footer-list-item"><FaLinkedinIn className="footer-icon linkedin-icon" /></li></a>
+            <a href="https://twitter.com/denver_dev" target='_blank'><li className="footer-list-item"><FaTwitter className="footer-icon twitter-icon" /></li></a>
 
           </ul>
         </div>

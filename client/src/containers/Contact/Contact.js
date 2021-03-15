@@ -5,12 +5,9 @@ import axios from 'axios'
 
 // Libs
 import { onError } from "../../libs/errorLib";
-import { useFormFields } from "../../libs/hooksLib";
 
 // Components
 import Container from '../../components/Container/Container';
-import Button from '../../components/Button/Button';
-import Input from '../../components/Input/Input';
 import LoaderButton from "../../components/LoaderButton/LoaderButton";
 
 // CSS
@@ -97,15 +94,16 @@ function Contact(props) {
             value={fields.textarea}
             onChange={handleInputChange}
           />
-        </Form.Group>
-        <LoaderButton
-          block
-          size="lg"
-          type="submit"
-          isLoading={isLoading}
-        >
-          Send
+          <LoaderButton
+            block
+            size="lg"
+            type="submit"
+            isLoading={isLoading}
+            style={{ marginTop: '25px' }}
+          >
+            Send
         </LoaderButton>
+        </Form.Group>
 
       </Form>
 

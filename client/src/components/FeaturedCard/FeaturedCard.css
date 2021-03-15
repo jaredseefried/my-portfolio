@@ -17,6 +17,8 @@
 
 .img-wrapper {
   overflow: hidden;
+  min-height: 200px;
+  max-height: 200px;
 }
 
 .featured-card .card-img-top {

@@ -1,9 +1,8 @@
 import React from 'react';
 import FeaturedCard from '../../components/FeaturedCard/FeaturedCard';
-import WebAppDev from '../../images/full-stack-developer-main.jpg'
-import Node from '../../images/2hjc9n8hifpf121uhjzw.jpg'
-import reactLogo from '../../images/reactjs.png'
-import Responsive from '../../images/responsive.png'
+import Node from '../../images/node-js-hexagon-wallpaper-preview.jpg'
+import code from '../../images/code.jpg'
+import ReactLogo from '../../images/react-logo.png'
 
 import './Features.css'
 
@@ -19,7 +18,7 @@ function Features() {
       alt: 'alt text'
     },
     {
-      src: reactLogo,
+      src: ReactLogo,
       className: '234',
       id: '123',
       title: 'Front End Development',
@@ -27,7 +26,7 @@ function Features() {
       alt: 'alt text'
     },
     {
-      src: Responsive,
+      src: code,
       className: '234',
       id: '123',
       title: 'Responsive Design',
