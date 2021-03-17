@@ -29,3 +29,31 @@
 .p-modal-text {
   font-size: 14px;
 }
+
+@media only screen and (max-width: 374px) {
+  .modal-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  img#modal-img\ 1 {
+    margin-bottom: 0px;
+  }
+  .icon-wrapper {
+    display: block;
+    flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 375px) {
+  .modal-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  img#modal-img\ 1 {
+    margin-bottom: 0px;
+  }
+  .icon-wrapper {
+    display: inline-block;
+    flex-direction: row-reverse;
+  }
+}

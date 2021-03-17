@@ -1,14 +1,28 @@
+// Dependencies
 import React, { useState } from "react";
-import { Auth } from "aws-amplify";
-import Form from "react-bootstrap/Form";
 import { useHistory } from "react-router-dom";
+
+// React Bootstrap Form
+import Form from "react-bootstrap/Form";
+
+//Components
 import LoaderButton from "../../components/LoaderButton/LoaderButton";
+
+//AWS Auth
+import { Auth } from "aws-amplify";
+
+// Libs
 import { useAppContext } from "../../libs/contextLib";
 import { useFormFields } from "../../libs/hooksLib";
 import { onError } from "../../libs/errorLib";
+
+// CSS
 import "./Login.css";
 
-export default function Login() {
+// Particles Background
+import Particles from '../../containers/Particles/Particles'
+
+const Login = () => {
   const history = useHistory();
   const { userHasAuthenticated } = useAppContext();
   const [isLoading, setIsLoading] = useState(false);
@@ -37,35 +51,40 @@ export default function Login() {
   }
 
   return (
-    <div className="Login">
-      <Form onSubmit={handleSubmit}>
-        <Form.Group size="lg" controlId="email">
-          <Form.Label>Email</Form.Label>
-          <Form.Control
-            autoFocus
-            type="email"
-            value={fields.email}
-            onChange={handleFieldChange}
-          />
-        </Form.Group>
-        <Form.Group size="lg" controlId="password">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="password"
-            value={fields.password}
-            onChange={handleFieldChange}
-          />
-        </Form.Group>
-        <LoaderButton
-          block
-          size="lg"
-          type="submit"
-          isLoading={isLoading}
-          disabled={!validateForm()}
-        >
-          Login
+    <>
+      <Particles />
+      <div className="Login">
+        <Form onSubmit={handleSubmit}>
+          <Form.Group size="lg" controlId="email">
+            <Form.Label>Email</Form.Label>
+            <Form.Control
+              autoFocus
+              type="email"
+              value={fields.email}
+              onChange={handleFieldChange}
+            />
+          </Form.Group>
+          <Form.Group size="lg" controlId="password">
+            <Form.Label>Password</Form.Label>
+            <Form.Control
+              type="password"
+              value={fields.password}
+              onChange={handleFieldChange}
+            />
+          </Form.Group>
+          <LoaderButton
+            block
+            size="lg"
+            type="submit"
+            isLoading={isLoading}
+            disabled={!validateForm()}
+          >
+            Login
         </LoaderButton>
-      </Form>
-    </div>
+        </Form>
+      </div>
+    </>
   );
 }
+
+export default Login

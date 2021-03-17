@@ -17,7 +17,7 @@ function Footer(props) {
   return (
     <Container className='footer-container col-12' id='footer-container'>
       <div className='row' style={{ padding: '20px 0px', height: '100%' }}>
-        <div className='about-me col-6'>
+        <div className='about-me col-md-12 col-lg-6'>
           <img className='jared-img' src={Jared} alt='Jared Seefried' />
           <p className='about-me-text'>With a certificate in Full Stack Web Development, focusing on JavaScript and Node.js, this experienced technical engineer has 10+ years of experience working within Agile development life cycles as an active team contributor, result driven problem solver with a desire to master Object-Oriented Programming.</p>
         </div>
@@ -33,7 +33,7 @@ function Footer(props) {
         </div>
         <div className='page-links col-2 d-flex flex-row-reverse'>
           <ul>
-            <a href='/' target='_blank'><li>Home</li></a>
+            <a href='#home-container' ><li>Home</li></a>
             <a href='/signup' target='_blank'><li>Signup</li></a>
             <a href='/login' target='_blank'><li>Login</li></a>
           </ul>

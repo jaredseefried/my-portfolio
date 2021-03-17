@@ -31,10 +31,10 @@ function MyModal(props) {
             <img
               src={props.src}
               alt={props.alt}
-              className={`col-4 modal-img ${props.className}`}
+              className={`col-md-12 col-lg-4 modal-img ${props.className}`}
               id={`modal-img ${props.id}`}
             />
-            <p className='col-8 p-modal-text'>{props.text}</p>
+            <p className='col-md-12 col-lg-8 p-modal-text'>{props.text}</p>
           </div>
           <div className='row'>
             <h4 className='col-12' style={{ marginTop: '20px' }}>Technologies</h4>

@@ -1,10 +1,23 @@
+// Dependencies
 import React, { useState, useEffect } from 'react';
+import { Row } from 'react-bootstrap'
+
+// CSS
 import './Main.css'
 import styled, { keyframes } from 'styled-components'
+
+// Images
 import mainWebDev from '../../images/mainWebDev.png'
+
+// Components
 import Button from '../../components/Button/Button'
 import Container from '../../components/Container/Container'
 
+// Containers
+import Languages from '../Languages/Languages';
+
+
+// Main Header - Landing Container
 function Main(props) {
   const adjectives = ['Interactive', 'Professional', 'Beautiful', 'Functional', 'Innovative']
   let [text, setText] = useState('Responsive')
@@ -37,17 +50,17 @@ function Main(props) {
 
   return (
     <Container className='main-container container-fluid col-12' id='main-container'>
-      <div className='row col-12'>
-        <div className="col-6">
-          <h1 className="main-h1">You Too Deserve A Website That's</h1>
-          <AnimateMainTxt className="main-h1 display-1" id="text-state">{text}</AnimateMainTxt>
+      <Row className='col-12 my-auto' style={{ height: '100%' }}>
+        <div className="col-sm-12 col-md-12 col-lg-8 col-xl-6">
+          <h2 className="main-h2">You Too Deserve A Website That's</h2>
+          <AnimateMainTxt className="main-h1" id="text-state">{text}</AnimateMainTxt>
           <h3 className="main-h3">Web Development by Jared Seefried</h3>
         </div>
-        <div className='col-6'>
+        <div className='col-4 main-img-wrapper'>
           <img id="mainwebdev" src={mainWebDev} alt="web development main image" />
         </div>
         <div className="buttons-container col-12">
-          <div className="row row-container col-6">
+          <div className="row row-container row-buttons col-sm-12 col-md-6">
             <Button type="button"
               variant='outline-primary'
               href='#projects-container'
@@ -64,7 +77,8 @@ function Main(props) {
               </Button>
           </div>
         </div>
-      </div>
+        <Languages />
+      </Row>
     </Container>
   );
 }

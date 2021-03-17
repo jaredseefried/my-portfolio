@@ -1,33 +1,27 @@
 import React, { Component } from 'react'
 import Particles from "react-tsparticles";
 
-const colorsArray = ['#695ca8', '#00acfc', '#fff', '#696969']
-
-const randomColors = (color) => {
-  let i = Math.floor(Math.random() * colorsArray.length);
-  if (color && i in colorsArray) {
-    return colorsArray.splice(i, 1)[0]
-  }
-  return colorsArray[i]
+const randomColors = () => {
+  setInterval(() => {
+    const colorsArray = ['#695ca8', '#00acfc', '#fff', '#696969']
+    return colorsArray[Math.floor(Math.random() * colorsArray.length)]
+  }, 2000)
 }
-
-
 class ParticlesBG extends Component {
   constructor(props) {
     super(props);
-
     this.particlesInit = this.particlesInit.bind(this);
     this.particlesLoaded = this.particlesLoaded.bind(this);
   }
 
   particlesInit(main) {
-    console.log(main);
-
+    // console.log(main);
+    // randomColors()
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
   }
 
   particlesLoaded(container) {
-    console.log(container);
+    // console.log(container);
   }
 
   render() {
@@ -47,7 +41,7 @@ class ParticlesBG extends Component {
             detectsOn: "window",
             events: {
               onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
               onHover: {
@@ -74,13 +68,13 @@ class ParticlesBG extends Component {
           },
           particles: {
             color: {
-              value: 'rgba(255, 255, 255, 0.3)',
+              value: randomColors(),
             },
             links: {
-              color: "#fff",
+              color: "#eee",
               distance: 150,
               enable: true,
-              opacity: 0.6,
+              opacity: 0.5,
               width: 0.24,
             },
             collisions: {
@@ -102,7 +96,7 @@ class ParticlesBG extends Component {
               value: 80,
             },
             opacity: {
-              value: .08,
+              value: 0.3,
               random: true,
             },
             shape: {

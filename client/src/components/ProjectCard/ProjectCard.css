@@ -1,5 +1,5 @@
 .project-card {
-  width: 16rem;
+  width: 16em;
 }
 
 .project-card .card-img-top {
@@ -18,4 +18,14 @@
   max-height: 150px;
   height: auto;
   object-fit: cover;
+}
+
+.featured-card .card-text {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 992px) {
+  .project-card {
+    width: 24em !important;
+  }
 }

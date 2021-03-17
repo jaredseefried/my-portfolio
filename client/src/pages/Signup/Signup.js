@@ -1,12 +1,18 @@
 import React, { useState } from "react";
-import Form from "react-bootstrap/Form";
 import { useHistory } from "react-router-dom";
+
+import Form from "react-bootstrap/Form";
+
 import LoaderButton from "../../components/LoaderButton/LoaderButton";
+
+import { Auth } from "aws-amplify";
+
 import { useAppContext } from "../../libs/contextLib";
 import { useFormFields } from "../../libs/hooksLib";
 import { onError } from "../../libs/errorLib";
+
 import "./Signup.css";
-import { Auth } from "aws-amplify";
+import Particles from "../../containers/Particles/Particles";
 
 export default function Signup() {
   const [fields, handleFieldChange] = useFormFields({
@@ -69,6 +75,7 @@ export default function Signup() {
 
   function renderConfirmationForm() {
     return (
+
       <Form onSubmit={handleConfirmationSubmit}>
         <Form.Group controlId="confirmationCode" size="lg">
           <Form.Label>Confirmation Code</Form.Label>
@@ -96,49 +103,52 @@ export default function Signup() {
 
   function renderForm() {
     return (
-      <Form onSubmit={handleSubmit}>
-        <Form.Group controlId="email" size="lg">
-          <Form.Label>Email</Form.Label>
-          <Form.Control
-            autoFocus
-            type="email"
-            value={fields.email}
-            onChange={handleFieldChange}
-          />
-        </Form.Group>
-        <Form.Group>
-          <div className="password-reqs">
-            <p className="text-center password-text" id="password-header">Password Requirements:</p>
-            <p className="text-center password-text">Password must include at least 8 characters, one uppercase, one lowercase, one number and one special character.</p>
-          </div>
-        </Form.Group>
-        <Form.Group controlId="password" size="lg">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="password"
-            value={fields.password}
-            onChange={handleFieldChange}
-          />
-        </Form.Group>
-        <Form.Group controlId="confirmPassword" size="lg">
-          <Form.Label>Confirm Password</Form.Label>
-          <Form.Control
-            type="password"
-            onChange={handleFieldChange}
-            value={fields.confirmPassword}
-          />
-        </Form.Group>
-        <LoaderButton
-          block
-          size="lg"
-          type="submit"
-          variant="success"
-          isLoading={isLoading}
-          disabled={!validateForm()}
-        >
-          Signup
+      <>
+        <Particles />
+        <Form onSubmit={handleSubmit}>
+          <Form.Group controlId="email" size="lg">
+            <Form.Label>Email</Form.Label>
+            <Form.Control
+              autoFocus
+              type="email"
+              value={fields.email}
+              onChange={handleFieldChange}
+            />
+          </Form.Group>
+          <Form.Group>
+            <div className="password-reqs">
+              <p className="text-center password-text" id="password-header">Password Requirements:</p>
+              <p className="text-center password-text">Password must include at least 8 characters, one uppercase, one lowercase, one number and one special character.</p>
+            </div>
+          </Form.Group>
+          <Form.Group controlId="password" size="lg">
+            <Form.Label>Password</Form.Label>
+            <Form.Control
+              type="password"
+              value={fields.password}
+              onChange={handleFieldChange}
+            />
+          </Form.Group>
+          <Form.Group controlId="confirmPassword" size="lg">
+            <Form.Label>Confirm Password</Form.Label>
+            <Form.Control
+              type="password"
+              onChange={handleFieldChange}
+              value={fields.confirmPassword}
+            />
+          </Form.Group>
+          <LoaderButton
+            block
+            size="lg"
+            type="submit"
+            variant="success"
+            isLoading={isLoading}
+            disabled={!validateForm()}
+          >
+            Signup
         </LoaderButton>
-      </Form>
+        </Form>
+      </>
     );
   }
 

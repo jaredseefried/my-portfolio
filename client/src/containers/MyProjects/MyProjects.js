@@ -1,5 +1,5 @@
 // Dependencies
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 // Components
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
@@ -18,7 +18,7 @@ import MealMatcher from '../../images/meal-matcher.jpg'
 // CSS
 import './MyProjects.css'
 
-function MyProjects(props) {
+const MyProjects = () => {
 
   const projects = [
     {
@@ -112,12 +112,6 @@ function MyProjects(props) {
 
   ]
 
-
-  useEffect(() => {
-    console.log(data);
-  }, [])
-
-
   const [modalShow, setModalShow] = useState(false);
 
   const [data, setData] = useState({})
@@ -127,12 +121,11 @@ function MyProjects(props) {
     setData(item)
   }
 
-
   return (
     <div className="projects-container col-12" id='projects-container'>
       <div className='projects-wrapper'>
-        <div className='row'>
-          <h1 className='display-3 text-center col-12 projects-title'>My Projects</h1>
+        <div className='row col-12'>
+          <h1 className='display-3 text-center projects-title'>My Projects</h1>
         </div>
         <div className='row' style={{ margin: '0 auto', width: '90%' }}>
           {projects.map((item, i) => (

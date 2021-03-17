@@ -47,39 +47,22 @@ function App() {
   return (
     !isAuthenticating && (
       <div className="App">
-
-        <Navbar fixed='top' collapseOnSelect expand="md" className="mb-3">
-          <LinkContainer to="/">
-            <Link to='#home-container' className="font-weight-bold nav-brand-link">Web Dev</Link>
-          </LinkContainer>
-          <LinkContainer to='/'>
-            <Link className='nav-link' to="#languages-container">Skills</Link>
-          </LinkContainer>
-          <LinkContainer to='/'>
-            <Link className='nav-link' to="#features-container">Features</Link>
-          </LinkContainer>
-          <LinkContainer to='/'>
-            <Link className='nav-link' to="#projects-container">My Projects</Link>
-          </LinkContainer>
-          <LinkContainer to='/'>
-            <Link className='nav-link' to="#contact-container">Contact</Link>
-          </LinkContainer>
-          <LinkContainer to='/'>
-            <Link className='nav-link' to="#footer-container">Footer</Link>
-          </LinkContainer>
-          <Navbar.Toggle />
-          <Navbar.Collapse className="justify-content-end">
+        <Navbar fixed='top' collapseOnSelect expand='lg' className="mb-3">
+          <Navbar.Brand href="/">JS</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav activeKey={window.location.pathname}>
+              <Nav.Link className="nav-link" href='/#home-container' >Web Dev</Nav.Link>
+              <Nav.Link className='nav-link' href="/#features-container">Features</Nav.Link>
+              <Nav.Link className='nav-link' href="/#projects-container">My Projects</Nav.Link>
+              <Nav.Link className='nav-link' href="/#contact-container">Contact</Nav.Link>
+              <Nav.Link className='nav-link' href="/#footer-container">Find Me</Nav.Link>
               {isAuthenticated ? (
                 <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
               ) : (
                 <>
-                  <LinkContainer to="/signup">
-                    <Nav.Link>Signup</Nav.Link>
-                  </LinkContainer>
-                  <LinkContainer to="/login">
-                    <Nav.Link>Login</Nav.Link>
-                  </LinkContainer>
+                  <Nav.Link className='nav-link' href='/signup'>Signup</Nav.Link>
+                  <Nav.Link className='nav-link' href='/login'>Login</Nav.Link>
                 </>
               )}
             </Nav>

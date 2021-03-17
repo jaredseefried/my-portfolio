@@ -1,7 +1,11 @@
 .main-container {
   color: white;
-  top: 25vh;
   width: 100%;
+  padding-top: 32px;
+}
+
+.main-h2 {
+  font-weight: bold;
 }
 
 .main-h3 {
@@ -19,7 +23,6 @@
   letter-spacing: .15em;
   /* Adjust as needed */
   animation: typing 3.5s 11s steps(45), blink-caret .75s step-end infinite, cssAnimation 0s 11s forwards;
-  ;
 }
 
 @keyframes cssAnimation {
@@ -33,7 +36,6 @@
 @keyframes typing {
   from {
     width: 0;
-    /* position: absolute; */
   }
   to {
     width: 100%;
@@ -55,6 +57,7 @@
 #text-state {
   animation-name: mainText;
   animation-duration: 2s;
+  font-size: 7em;
 }
 
 @keyframes mainText {
@@ -68,16 +71,14 @@
 
 #mainwebdev {
   position: absolute;
-  top: -71px;
-  right: 84px;
-  width: 70%;
+  top: -64px;
+  right: -158px;
 }
 
 #portfolio-button {
-  margin-top: 80px;
-  color: #00acfc;
+  color: #fff;
   border-color: #00acfc;
-  font-size: 30px;
+  font-size: 24px;
   background-color: transparent;
   box-shadow: 2px 1px 0px #00acfc;
 }
@@ -86,15 +87,14 @@
   color: #000;
   border-color: #000;
   background-color: #00acfc;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 #contact-button, #send-button {
-  margin-top: 80px;
   margin-left: 50px;
-  color: #695ca8;
+  color: #fff;
   border-color: #695ca8;
-  font-size: 30px;
+  font-size: 24px;
   background-color: transparent;
   box-shadow: 2px 1px 0px #695ca8;
 }
@@ -103,9 +103,118 @@
   color: #000;
   border-color: #000;
   background-color: #695ca8;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .row-container {
   position: relative;
+}
+
+.row-buttons {
+  padding-top: 25px;
+}
+
+@media only screen and (max-width: 374px) {
+  .main-container {
+    height: auto;
+  }
+  .main-h2 {
+    font-size: 28px;
+  }
+  #text-state {
+    font-size: 3em;
+  }
+  #mainwebdev, .main-img-wrapper {
+    display: none;
+  }
+  .main-h3 {
+    white-space: unset;
+    font-size: 11px;
+    animation: unset;
+    visibility: inherit;
+  }
+  #portfolio-button {
+    font-size: 14px;
+  }
+  #contact-button {
+    font-size: 14px;
+    margin: 0 auto;
+  }
+  .row-buttons {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 375px) {
+  #text-state {
+    font-size: 3em;
+  }
+  #mainwebdev {
+    display: none;
+  }
+  .main-h2 {
+    font-size: 32px;
+  }
+  .main-h3 {
+    white-space: unset;
+    font-size: 12px;
+    animation: unset;
+    visibility: inherit;
+  }
+  #portfolio-button {
+    font-size: 18px;
+  }
+  #contact-button, #send-button {
+    font-size: 21px;
+    margin-left: 0 auto;
+  }
+  .main-img-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  #mainwebdev, .main-img-wrapper {
+    display: none;
+  }
+  .main-h3 {
+    white-space: unset;
+    font-size: auto;
+    animation: unset;
+    visibility: inherit;
+  }
+  #portfolio-button {
+    font-size: 18px;
+  }
+  #contact-button, #send-button {
+    font-size: 21px;
+    margin-left: 0 auto;
+  }
+  .row-buttons {
+    margin-top: 50px;
+  }
+  .main-container {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 769px) {
+  #mainwebdev, .main-img-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 992px) {
+  #mainwebdev {
+    position: absolute;
+    top: -9px;
+    right: -3px;
+    width: 85%;
+  }
+  #text-state {
+    font-size: 6em;
+  }
+  .main-container {
+    height: 70%;
+  }
 }

@@ -1,24 +1,48 @@
 .languages-container {
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.904);
-  padding-top: 50px;
 }
 
 .language-logo {
   width: 100px;
-  height: 100px;
+  height: auto;
   margin: 0 auto;
-  margin-top: 40px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-#Node-logo {
-  width: 200px;
-  height: 57px;
-  margin-top: 51px;
+.language-logo:hover {
+  transform: scale(1.5);
 }
 
-#expressjs-logo {
-  width: 175px;
-  height: 175px;
-  margin-top: 0px;
+@media only screen and (max-width: 480px) {
+  .languages-container {
+    margin: 25px auto;
+  }
+  .language-logo {
+    width: 96px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .language-logo {
+    width: 164px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 769px) {
+  .language-logo {
+    width: 121px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 992px) {
+  .language-logo {
+    width: 170px;
+  }
 }

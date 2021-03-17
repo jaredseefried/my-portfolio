@@ -73,7 +73,6 @@ function Contact(props) {
           />
         </Form.Group>
         <Form.Group controlId="formHorizontalEmail" size="lg" controlId="email">
-
           <Form.Control
             name='email'
             placeholder='email'
@@ -84,7 +83,6 @@ function Contact(props) {
           />
         </Form.Group>
         <Form.Group controlId="formHorizontalTextarea" size="lg" controlId="textarea">
-
           <Form.Control
             as='textarea'
             name='textarea'
@@ -104,9 +102,7 @@ function Contact(props) {
             Send
         </LoaderButton>
         </Form.Group>
-
       </Form>
-
     </Container>
   );
 }
