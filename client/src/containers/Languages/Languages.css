@@ -13,9 +13,9 @@
   transition: all 1s ease;
 }
 
-.language-logo:hover {
+/* .language-logo:hover {
   transform: scale(1.5);
-}
+} */
 
 @media only screen and (max-width: 480px) {
   .languages-container {
@@ -27,11 +27,17 @@
     margin: 0 auto;
     margin-top: 20px;
   }
+  .language-logo:hover {
+    transform: none;
+  }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
   .language-logo {
     width: 164px;
+  }
+  .language-logo:hover {
+    transform: none;
   }
 }
 
