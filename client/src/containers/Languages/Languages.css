@@ -3,8 +3,7 @@
 }
 
 .language-logo {
-  width: 100px;
-  height: 100px;
+  width: 18vh;
   margin: 0 auto;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -22,10 +21,8 @@
     margin: 25px auto;
   }
   .language-logo {
-    width: 96px;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 20px;
+    width: 9vh;
+    margin: 20px auto;
   }
   .language-logo:hover {
     transform: none;
@@ -34,7 +31,7 @@
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
   .language-logo {
-    width: 164px;
+    width: 15vh;
   }
   .language-logo:hover {
     transform: none;
@@ -43,12 +40,12 @@
 
 @media only screen and (max-width: 991px) and (min-width: 769px) {
   .language-logo {
-    width: 121px;
+    width: 12vh;
   }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 992px) {
   .language-logo {
-    width: 170px;
+    width: 14vh;
   }
 }
