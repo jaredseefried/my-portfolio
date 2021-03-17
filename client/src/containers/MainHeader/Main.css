@@ -91,7 +91,7 @@
   font-size: 24px;
 }
 
-#contact-button, #send-button {
+#contact-button {
   margin-left: 50px;
   color: #fff;
   border-color: #695ca8;
@@ -100,10 +100,26 @@
   box-shadow: 2px 1px 0px #695ca8;
 }
 
-#contact-button:hover, #send-button:hover {
+#contact-button:hover {
   color: #000;
   border-color: #000;
   background-color: #695ca8;
+  font-size: 24px;
+}
+
+#download-link {
+  margin-left: 50px;
+  color: #fff;
+  border-color: #fff;
+  font-size: 24px;
+  background-color: transparent;
+  box-shadow: 2px 1px 0px #fff;
+}
+
+#download-link:hover {
+  color: #000;
+  border-color: #000;
+  background-color: #fff;
   font-size: 24px;
 }
 
@@ -143,7 +159,7 @@
     height: auto;
   }
   #text-state {
-    font-size: 4em;
+    font-size: 3em;
   }
   #mainwebdev {
     display: none;
@@ -158,18 +174,17 @@
     animation: unset;
     visibility: inherit;
   }
-  #portfolio-button {
-    font-size: 18px;
-  }
-  #contact-button {
-    font-size: 21px;
-    margin-left: 0 auto;
-  }
   .main-img-wrapper {
     display: none;
   }
   .row-buttons {
     margin-top: 40px;
+  }
+  #contact-button, #portfolio-button, #download-link {
+    font-size: 20px;
+    margin-left: 5px;
+    width: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -183,18 +198,18 @@
     animation: unset;
     visibility: inherit;
   }
-  #portfolio-button {
-    font-size: 18px;
-  }
-  #contact-button, #send-button {
-    font-size: 21px;
-    margin-left: 0 auto;
-  }
   .row-buttons {
-    margin-top: 50px;
+    margin: 50px auto;
+    height: auto;
   }
   .main-container {
     height: auto;
+  }
+  #contact-button, #portfolio-button, #download-link {
+    font-size: 20px;
+    margin-left: 5px;
+    width: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -216,5 +231,11 @@
   }
   .main-container {
     height: 70%;
+  }
+  #contact-button, #portfolio-button, #download-link {
+    font-size: 20px;
+    margin-left: 5px;
+    width: 100%;
+    margin-top: 10px;
   }
 }

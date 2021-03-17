@@ -9,6 +9,9 @@ import styled, { keyframes } from 'styled-components'
 // Images
 import mainWebDev from '../../images/mainWebDev.png'
 
+// Doc
+import Resume from '../../assets/Resume.docx'
+
 // Components
 import Button from '../../components/Button/Button'
 import Container from '../../components/Container/Container'
@@ -75,11 +78,18 @@ function Main(props) {
               id="contact-button" >
               Contact
               </Button>
+            <Button type="button"
+              variant='outline-secondary'
+              href={Resume}
+              className="download-link"
+              id="download-link" >
+              Resume
+              </Button>
           </div>
         </div>
         <Languages />
       </Row>
-    </Container>
+    </Container >
   );
 }
 
