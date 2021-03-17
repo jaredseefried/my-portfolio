@@ -1,4 +1,4 @@
-# My Portfolio - Built with MERN Stack. (MongoDB, Express.js, React.js and Node.js)
+# My Portfolio - Built with MERN Stack. (MongoDB, Express.js, React.js and Node.js) with AWS and Serverless
 
 ## Table of Contents
 
@@ -9,9 +9,9 @@
 
 # Description
 
-The portfolio website is a clean and minimal site to showcase certain skills and technology used. Built on a MERN stack which utilizes NoSQL using MongoDB to record the information submitted on the Contact Form, Express makes an API call and emails myself upon submission of a contact form, React is the primary framework used for front-end development, built on Node to handle it all. The site follows the MVC design pattern (Model-View-Controller) which is an development architecture style commonly used in software companies.
+My portfolio website showcases my skills and technology used. Built on a MERN stack with AWS and Serverless framework which utilizes NoSQL using MongoDB and DynamoDB to record the information submitted on the Contact Form, Express makes an API call and emails myself upon submission of a contact form, Serverless to call the API Gateway to AWS, React is the primary framework used for front-end development, built on Node to handle it all. The site follows the MVC design pattern (Model-View-Controller) which is an development architecture style commonly used in software companies.
 
-### Deployed Site @ https://jared-seefrieds-portfolio.herokuapp.com/
+### Deployed Site @ https://denverdevjared.herokuapp.com/
 
 ---
 
@@ -23,8 +23,10 @@ The portfolio website is a clean and minimal site to showcase certain skills and
 - Express.js
 - React.js
 - Node.js
+- Amazon Web Services
+- Serverless Framework
 - Nodemailer
-- Vanta.js
+- Particles
 
 # Installation Requirements
 
