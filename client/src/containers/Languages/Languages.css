@@ -4,6 +4,7 @@
 
 .language-logo {
   width: 18vh;
+  height: 18vh;
   margin: 0 auto;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -21,7 +22,8 @@
     margin: 25px auto;
   }
   .language-logo {
-    width: 9vh;
+    width: 11vh;
+    height: 11vh;
     margin: 20px auto;
   }
   .language-logo:hover {
