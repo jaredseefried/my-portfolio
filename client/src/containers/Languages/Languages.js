@@ -74,7 +74,7 @@ function Languages(props) {
   ]
 
   return (
-    <Container className="languages-container container-fluid col-12" id='languages-container'>
+    <Container className="languages-container col-12" id='languages-container'>
       <div className="row">
         {LangLogos.map((image) => (
           <img

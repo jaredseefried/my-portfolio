@@ -107,14 +107,6 @@
   font-size: 24px;
 }
 
-.row-container {
-  position: relative;
-}
-
-.row-buttons {
-  padding-top: 25px;
-}
-
 @media only screen and (max-width: 374px) {
   .main-container {
     height: auto;
@@ -168,12 +160,15 @@
   #portfolio-button {
     font-size: 18px;
   }
-  #contact-button, #send-button {
+  #contact-button {
     font-size: 21px;
     margin-left: 0 auto;
   }
   .main-img-wrapper {
     display: none;
+  }
+  .row-buttons {
+    margin-top: 40px;
   }
 }
 
