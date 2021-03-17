@@ -1,5 +1,6 @@
 .project-card {
   width: 16em;
+  margin: 0 auto;
 }
 
 .project-card .card-img-top {

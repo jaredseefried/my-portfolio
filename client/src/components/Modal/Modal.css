@@ -1,7 +1,7 @@
 .modal-img {
-  width: auto;
-  height: auto;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 5px;
 }
 
@@ -46,12 +46,13 @@
 
 @media only screen and (max-width: 480px) and (min-width: 375px) {
   .modal-img {
-    width: 100%;
+    /* width: auto; */
+    /* object-fit: cover; */
     margin-bottom: 20px;
   }
-  img#modal-img\ 1 {
+  /* img#modal-img\ 1 {
     margin-bottom: 0px;
-  }
+  } */
   .icon-wrapper {
     display: inline-block;
     flex-direction: row-reverse;
