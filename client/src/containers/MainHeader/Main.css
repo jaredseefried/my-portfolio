@@ -143,13 +143,14 @@
     height: auto;
   }
   #text-state {
-    font-size: 3em;
+    font-size: 4em;
   }
   #mainwebdev {
     display: none;
   }
   .main-h2 {
-    font-size: 32px;
+    text-align: center;
+    font-size: 34px;
   }
   .main-h3 {
     white-space: unset;

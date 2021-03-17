@@ -5,8 +5,9 @@
 }
 
 .projects-title {
-  margin: 15px auto;
+  margin: 19px auto;
   color: white;
+  font-size: 3em;
 }
 
 .project-card {

@@ -124,7 +124,7 @@ const MyProjects = () => {
   return (
     <div className="projects-container col-12" id='projects-container'>
       <div className='projects-wrapper'>
-        <div className='row col-12'>
+        <div className='row col-12' style={{ margin: '0 auto', width: '100%' }}>
           <h1 className='display-3 text-center projects-title'>My Projects</h1>
         </div>
         <div className='row' style={{ margin: '0 auto', width: '90%' }}>
