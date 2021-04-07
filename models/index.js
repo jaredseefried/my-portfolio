@@ -1,3 +1,4 @@
 module.exports = {
-  Contact: require('./contactModel')
+  Contact: require('./contactModel'),
+  MyProject: require('./contactModel')
 }

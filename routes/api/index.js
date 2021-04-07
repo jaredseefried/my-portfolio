@@ -1,10 +1,10 @@
 const router = require("express").Router();
 const contactRoutes = require("./contacts");
 const mailRoutes = require('./sendMail')
-// const postingRoutes = require('./posting')
+const projectsRoutes = require('./myProjects')
 
 router.use("/contacts", contactRoutes);
 router.use('/sendMail', mailRoutes)
-// router.use('/posting', postingRoutes)
+router.use('/myProjects', projectsRoutes)
 
 module.exports = router;
